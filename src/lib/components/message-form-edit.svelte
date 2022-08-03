@@ -38,7 +38,7 @@
       err = error;
       return;
     }
-    success = "Votre messaga a été modifié. Retournez à l'Accueil pour afficher votre nouveau message.";
+    success = "Votre message a été modifié. Retournez à l'Accueil pour afficher votre nouveau message.";
     dispatch("edit");
   }
 </script>

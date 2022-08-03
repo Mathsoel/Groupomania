@@ -24,7 +24,7 @@ export async function POST({ request }) {
     }
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      return { body: { error: "L'adresse email existe déjà" } }
+      return { body: { error: "L'adresse email existe déjà. Merci d'actualiser la page pour acceder au formulaire d'Inscription." } }
     }
     const encryptedPassword = await encryptPassword(password);
     const user = new User({ email, password: encryptedPassword });
